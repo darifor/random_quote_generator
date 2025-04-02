@@ -26,6 +26,9 @@ const renderQuote = (quote) => {
         let newSpan = document.createElement("span");
         newSpan.classList.add("tag");
         newSpan.textContent = tag;
+        if (!newSpan.textContent.trim()) {
+            newSpan.style.display = "none";
+        }
         containerDiv.appendChild(newSpan);
     });
     const pQuote = document.createElement("p");

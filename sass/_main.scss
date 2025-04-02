@@ -1,0 +1,107 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.main {
+  &__container {
+    margin: 0 auto;
+    max-width: 80%;
+    border-radius: 20px;
+    border: 5px solid $color-violet;
+    outline: 5px solid rgb(165, 23, 128);
+    padding: 20px;
+    background-color: #111629;
+    color: white;
+    text-align: center;
+
+    .author {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+
+      @include breakpoint(tablet) {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+
+      @include breakpoint(desktop) {
+        font-size: 2rem;
+      }
+    }
+
+    .tag {
+      font-size: 0.8rem;
+      color: aqua;
+      border: 1px solid aqua;
+      border-radius: 17px;
+      padding: 3px 10px;
+      margin-left: 8px;
+      margin-right: 8px;
+
+      @include breakpoint(tablet) {
+        font-size: 1rem;
+      }
+
+      @include breakpoint(desktop) {
+        font-size: 1.3rem;
+        border-radius: 20px;
+        padding: 3px 12px;
+      }
+    }
+
+    .quote {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-size: 0.8rem;
+      font-style: italic;
+      color: beige;
+
+      @include breakpoint(tablet) {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        margin-bottom: 25px;
+      }
+
+      @include breakpoint(desktop) {
+        font-size: 1.6rem;
+      }
+    }
+
+    button {
+      background-color: transparent;
+      border: 1px solid rgb(156, 146, 146);
+      cursor: pointer;
+
+      &:hover {
+        border-color: $color-violet;
+      }
+
+      &:hover i {
+        color: $color-violet;
+      }
+
+      &.left {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+
+      &.right {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        margin-left: 5px;
+      }
+
+      i {
+        color: beige;
+        font-size: 1.2rem;
+        padding: 8px 18px;
+
+        @include breakpoint(tablet) {
+            font-size: 1.5rem;
+        }
+
+        @include breakpoint(desktop) {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}

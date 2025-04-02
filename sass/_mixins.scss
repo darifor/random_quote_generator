@@ -28,8 +28,8 @@
 
 @mixin reset-list() {
   display: flex;
-  justify-content: flex-start;
-  gap: 20px;
+  justify-content: center;
+  gap: 10px;
   align-items: center;
   list-style: none;
 }

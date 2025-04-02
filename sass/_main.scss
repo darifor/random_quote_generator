@@ -33,9 +33,7 @@
       border: 1px solid aqua;
       border-radius: 17px;
       padding: 3px 10px;
-      margin-left: 8px;
-      margin-right: 8px;
-
+    
       @include breakpoint(tablet) {
         font-size: 1rem;
       }
@@ -95,13 +93,25 @@
         padding: 8px 18px;
 
         @include breakpoint(tablet) {
-            font-size: 1.5rem;
+          font-size: 1.5rem;
         }
 
         @include breakpoint(desktop) {
           font-size: 1.8rem;
         }
       }
+    }
+  }
+
+  &__tags {
+    @include reset-list();
+
+    @include breakpoint(tablet) {
+      gap: 15px;
+    }
+
+    @include breakpoint(desktop) {
+      gap: 20px;
     }
   }
 }

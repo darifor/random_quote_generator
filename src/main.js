@@ -22,15 +22,15 @@ const renderQuote = (quote) => {
     pAuthor.classList.add("author");
     pAuthor.textContent = quote.author;
     containerDiv.appendChild(pAuthor);
+    const listTags = document.createElement("ul");
+    listTags.classList.add("main__tags");
     quote.tags.map((tag) => {
-        let newSpan = document.createElement("span");
-        newSpan.classList.add("tag");
-        newSpan.textContent = tag;
-        if (!newSpan.textContent.trim()) {
-            newSpan.style.display = "none";
-        }
-        containerDiv.appendChild(newSpan);
+        let newLi = document.createElement("li");
+        newLi.classList.add("tag");
+        newLi.textContent = tag;
+        listTags.appendChild(newLi);
     });
+    containerDiv.appendChild(listTags);
     const pQuote = document.createElement("p");
     pQuote.classList.add("quote");
     pQuote.textContent =`"${quote.quote}"`;

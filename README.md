@@ -74,7 +74,7 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
 
 ## Contribución  :information_desk_person:
 
-Si te gustaría contribuir a este proyecto, ¡tus aportaciones son bienvenidas! Puedes:
+Si quieres contribuir a este proyecto, ¡tus aportaciones son bienvenidas! Puedes:
 
 * Reportar errores o sugerir nuevas funcionalidades.
 * Enviar pull requests con mejoras o correcciones.

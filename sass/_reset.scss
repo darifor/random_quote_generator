@@ -13,7 +13,10 @@ html {
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #464141;
-    background: linear-gradient(to bottom, #ADD8E6, #e2b624);
+    background-image: url("wisdomqr.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color:rgb(238, 207, 236);
     min-height: 100vh;
 }
 
